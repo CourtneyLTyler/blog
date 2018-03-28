@@ -1,0 +1,103 @@
+/* line 4, /Users/unicourt/Downloads/cf_template-1.1.1/blog/app/assets/stylesheets/simple_pages.scss */
+body,
+footer {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+/* line 10, /Users/unicourt/Downloads/cf_template-1.1.1/blog/app/assets/stylesheets/simple_pages.scss */
+h1 {
+  font-family: Cagliostro, sans-serif;
+  color: #ff3399;
+  text-align: center;
+  padding-top: 20px;
+}
+
+/* line 17, /Users/unicourt/Downloads/cf_template-1.1.1/blog/app/assets/stylesheets/simple_pages.scss */
+h2 {
+  font-family: 'Cagliostro', sans-serif;
+  text-align: center;
+}
+
+/* line 22, /Users/unicourt/Downloads/cf_template-1.1.1/blog/app/assets/stylesheets/simple_pages.scss */
+.info {
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+/* line 29, /Users/unicourt/Downloads/cf_template-1.1.1/blog/app/assets/stylesheets/simple_pages.scss */
+.my-image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 42, /Users/unicourt/Downloads/cf_template-1.1.1/blog/app/assets/stylesheets/simple_pages.scss */
+body {
+  padding-bottom: 20px;
+}
+
+/* line 46, /Users/unicourt/Downloads/cf_template-1.1.1/blog/app/assets/stylesheets/simple_pages.scss */
+h3 {
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+}
+
+/* line 51, /Users/unicourt/Downloads/cf_template-1.1.1/blog/app/assets/stylesheets/simple_pages.scss */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: black;
+}
+
+/* line 59, /Users/unicourt/Downloads/cf_template-1.1.1/blog/app/assets/stylesheets/simple_pages.scss */
+li {
+  float: left;
+}
+
+/* line 63, /Users/unicourt/Downloads/cf_template-1.1.1/blog/app/assets/stylesheets/simple_pages.scss */
+li a {
+  color: #ff3399;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  padding: 14px 16px;
+  text-transform: uppercase;
+}
+
+/* line 72, /Users/unicourt/Downloads/cf_template-1.1.1/blog/app/assets/stylesheets/simple_pages.scss */
+li a:hover {
+  color: white;
+  text-decoration: none;
+}
+
+/* line 77, /Users/unicourt/Downloads/cf_template-1.1.1/blog/app/assets/stylesheets/simple_pages.scss */
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: black;
+  color: #ff3399;
+  padding: 14px;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+
+ */
+
