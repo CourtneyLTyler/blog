@@ -1,6 +1,6 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Products</h1>
+<h1>Our Products</h1>
 
 <table>
   <thead>
@@ -14,7 +14,7 @@
 
   <tbody>
     <% @products.each do |product| %>
-      <tr>
+      <tr class="chairtable">
         <td><%= product.name %></td>
         <td><%= product.description %></td>
         <td><%= product.image_url %></td>
@@ -29,3 +29,15 @@
 <br>
 
 <%= link_to 'New Product', new_product_path %>
+
+<!-- Below is an example
+<% @products.each do |product| %>
+  <tr class="crazy">
+    <h2 class="loco"><%= product.name %></h2>
+    <td><%= product.description %></td>
+    <td><%= product.image_url %></td>
+    <td><%= link_to 'Show', product %></td>
+    <td><%= link_to 'Edit', edit_product_path(product) %></td>
+    <td><%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %> -->
