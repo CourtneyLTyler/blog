@@ -2,10 +2,12 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-table {
-    border-collapse: collapse;
-    margin-top: 60px;
-}
+// table {
+//     border-collapse: collapse;
+//     margin-top: 60px;
+//     table-layout: fixed;
+//     width: 100%;
+// }
 
 table,
 th,
@@ -28,23 +30,19 @@ th {
     vertical-align: middle;
 }
 
-table {
-  table-layout: fixed;
-  width: 100%;
-}
 
-.col-ID {
-  width: 10%;
-}
-
-.col-Name {
-  width: 30%;
-}
-
-.col-Description {
-  width: 30%;
-}
-
-.col-Image_URL {
-  width: 30%;
-}
+// .col-ID {
+//   width: 10%;
+// }
+//
+// .col-Name {
+//   width: 30%;
+// }
+//
+// .col-Description {
+//   width: 30%;
+// }
+//
+// .col-Image_URL {
+//   width: 30%;
+// }
