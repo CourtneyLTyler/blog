@@ -2,28 +2,48 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 body,
-footer {
-  margin-left: 10px;
-  margin-right: 10px;
+footer,
+nav {
+  font-family: 'Muli', arial, helvetica, sans-serif;
+  margin-right: 2%;
+  margin-left: 2%;
+}
+
+body {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+// start carousel
+
+.carousel-caption {
+	font-size: 3em;
+  top: 50%;
+  text-shadow: 0.125em 0.125em 0.25em #000000;
+}
+
+.item img {
+  width: 100%;
+  object-fit: contain;
+}
+
+// end carousel
+
+.container {
+  display: block;
+  margin-top: 20%;
+  padding: 0 50px;
+  border-style: solid;
 }
 
 h1 {
-  font-family: Cagliostro, sans-serif;
   color: #ff3399;
   text-align: center;
-  padding-top: 20px;
 }
 
-h2 {
-  font-family: 'Cagliostro', sans-serif;
-  text-align: center;
-}
-
+h2,
 .info {
-  font-family: 'Roboto', sans-serif;
   text-align: center;
-  padding-top: 25px;
-  padding-bottom: 25px;
 }
 
 .my-image {
@@ -32,47 +52,23 @@ h2 {
   margin-right: auto;
 }
 
-// .carousel {
-//   width: 70%;
-//   margin-left: auto;
-//   margin-right: auto;
-//   margin-top: 40px;
-// }
-
-body {
-  padding-bottom: 20px;
-}
-
 h3 {
-  font-family: 'Roboto', sans-serif;
   text-align: center;
 }
 
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: black;
+#products_header {
+  border-style: solid;
+  border-color: black;
+  margin-bottom: 20px;
 }
 
-li {
-  float: left;
-}
-
-li a {
-  color: #ff3399;
-  display: block;
-  text-align: center;
-  text-decoration: none;
-  padding: 14px 16px;
+// navbar
+.navbar {
   text-transform: uppercase;
 }
 
-li a:hover {
-  color: white;
-  text-decoration: none;
-}
+
+//footer
 
 footer {
   position: fixed;
@@ -80,6 +76,6 @@ footer {
   bottom: 0;
   width: 100%;
   background-color: black;
-  color: #ff3399;
+  color: #bbbbbb;
   padding: 14px;
 }
