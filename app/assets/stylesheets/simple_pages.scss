@@ -17,7 +17,7 @@ body {
 // start carousel
 
 .carousel-caption {
-	font-size: 3em;
+	font-size: 2em;
   top: 50%;
   text-shadow: 0.125em 0.125em 0.25em #000000;
 }
@@ -28,6 +28,12 @@ body {
 }
 
 // end carousel
+
+#welcome {
+  display: block;
+  padding: 0 30px;
+  border-style: solid;
+}
 
 .container {
   display: block;
@@ -41,9 +47,13 @@ h1 {
   text-align: center;
 }
 
-h2,
+h2, h3, {
+  text-align: center;
+}
+
 .info {
   text-align: center;
+  font-size: 1.5em;
 }
 
 .my-image {
@@ -52,15 +62,15 @@ h2,
   margin-right: auto;
 }
 
-h3 {
-  text-align: center;
-}
-
 #products_header {
   border-style: solid;
   border-color: black;
   margin-bottom: 20px;
 }
+// 
+// #order_page {
+//   padding: 50px;
+// }
 
 // navbar
 .navbar {
