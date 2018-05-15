@@ -1,0 +1,176 @@
+/* line 9, /Users/unicourt/Downloads/cf_template-1.1.1/blog/app/assets/stylesheets/scaffolds.scss */
+pre {
+  background-color: #eee;
+  padding: 10px;
+  font-size: 11px;
+}
+
+/* line 28, /Users/unicourt/Downloads/cf_template-1.1.1/blog/app/assets/stylesheets/scaffolds.scss */
+th {
+  padding-bottom: 5px;
+}
+
+/* line 32, /Users/unicourt/Downloads/cf_template-1.1.1/blog/app/assets/stylesheets/scaffolds.scss */
+td {
+  padding: 0 5px 7px;
+}
+
+/* line 42, /Users/unicourt/Downloads/cf_template-1.1.1/blog/app/assets/stylesheets/scaffolds.scss */
+#notice {
+  color: green;
+}
+
+/* line 46, /Users/unicourt/Downloads/cf_template-1.1.1/blog/app/assets/stylesheets/scaffolds.scss */
+.field_with_errors {
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
+
+/* line 52, /Users/unicourt/Downloads/cf_template-1.1.1/blog/app/assets/stylesheets/scaffolds.scss */
+#error_explanation {
+  width: 450px;
+  border: 2px solid red;
+  padding: 7px 7px 0;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+}
+/* line 59, /Users/unicourt/Downloads/cf_template-1.1.1/blog/app/assets/stylesheets/scaffolds.scss */
+#error_explanation ul li {
+  font-size: 12px;
+  list-style: square;
+}
+
+/* line 65, /Users/unicourt/Downloads/cf_template-1.1.1/blog/app/assets/stylesheets/scaffolds.scss */
+label {
+  display: block;
+}
+/* line 4, /Users/unicourt/Downloads/cf_template-1.1.1/blog/app/assets/stylesheets/simple_pages.scss */
+body,
+footer,
+nav {
+  font-family: 'Muli', arial, helvetica, sans-serif;
+  margin-right: 2%;
+  margin-left: 2%;
+}
+
+/* line 12, /Users/unicourt/Downloads/cf_template-1.1.1/blog/app/assets/stylesheets/simple_pages.scss */
+body {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+/* line 19, /Users/unicourt/Downloads/cf_template-1.1.1/blog/app/assets/stylesheets/simple_pages.scss */
+.carousel-caption {
+  font-size: 2em;
+  top: 50%;
+  text-shadow: 0.125em 0.125em 0.25em #000000;
+}
+
+/* line 25, /Users/unicourt/Downloads/cf_template-1.1.1/blog/app/assets/stylesheets/simple_pages.scss */
+.item img {
+  width: 100%;
+  object-fit: contain;
+}
+
+/* line 32, /Users/unicourt/Downloads/cf_template-1.1.1/blog/app/assets/stylesheets/simple_pages.scss */
+#welcome {
+  display: block;
+  padding: 0 30px;
+  border-style: solid;
+}
+
+/* line 38, /Users/unicourt/Downloads/cf_template-1.1.1/blog/app/assets/stylesheets/simple_pages.scss */
+.container {
+  display: block;
+  margin-top: 20%;
+  padding: 0 50px;
+  border-style: solid;
+  text-align: center;
+  margin-bottom: 20%;
+}
+
+/* line 47, /Users/unicourt/Downloads/cf_template-1.1.1/blog/app/assets/stylesheets/simple_pages.scss */
+h1 {
+  color: #ff3399;
+  text-align: center;
+}
+
+/* line 52, /Users/unicourt/Downloads/cf_template-1.1.1/blog/app/assets/stylesheets/simple_pages.scss */
+h2, h3 {
+  text-align: center;
+}
+
+/* line 56, /Users/unicourt/Downloads/cf_template-1.1.1/blog/app/assets/stylesheets/simple_pages.scss */
+.info {
+  text-align: center;
+  font-size: 1.5em;
+  margin-bottom: 20px;
+}
+
+/* line 62, /Users/unicourt/Downloads/cf_template-1.1.1/blog/app/assets/stylesheets/simple_pages.scss */
+.my-image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 68, /Users/unicourt/Downloads/cf_template-1.1.1/blog/app/assets/stylesheets/simple_pages.scss */
+#products_header {
+  border-style: solid;
+  border-color: black;
+  margin-bottom: 20px;
+  margin-top: 40px;
+}
+
+/* line 77, /Users/unicourt/Downloads/cf_template-1.1.1/blog/app/assets/stylesheets/simple_pages.scss */
+.navbar {
+  text-transform: uppercase;
+}
+
+/* line 84, /Users/unicourt/Downloads/cf_template-1.1.1/blog/app/assets/stylesheets/simple_pages.scss */
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: black;
+  color: #bbbbbb;
+  padding: 14px;
+}
+
+/* line 96, /Users/unicourt/Downloads/cf_template-1.1.1/blog/app/assets/stylesheets/simple_pages.scss */
+.form {
+  text-align: left;
+}
+
+/* line 100, /Users/unicourt/Downloads/cf_template-1.1.1/blog/app/assets/stylesheets/simple_pages.scss */
+.submit {
+  float: left;
+  margin-bottom: 20px;
+}
+
+/* line 105, /Users/unicourt/Downloads/cf_template-1.1.1/blog/app/assets/stylesheets/simple_pages.scss */
+.thanks {
+  margin-top: 40px;
+  text-align: center;
+  font-size: 1.5em;
+  border-style: solid;
+  border-color: black;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+
+ */
+
