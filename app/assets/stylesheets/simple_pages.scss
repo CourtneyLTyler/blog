@@ -41,6 +41,7 @@ body {
   padding: 0 50px;
   border-style: solid;
   text-align: center;
+  margin-bottom: 20%;
 }
 
 h1 {
@@ -87,4 +88,23 @@ footer {
   background-color: black;
   color: #bbbbbb;
   padding: 14px;
+}
+
+//contact form
+
+.form {
+  text-align: left;
+}
+
+.submit {
+  float: left;
+  margin-bottom: 20px;
+}
+
+.thanks {
+  margin-top: 40px;
+  text-align: center;
+  font-size: 1.5em;
+  border-style: solid;
+  border-color: black;
 }
