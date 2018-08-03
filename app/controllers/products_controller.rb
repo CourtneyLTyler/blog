@@ -3,15 +3,25 @@ class ProductsController < ApplicationController
 
   # GET /products
   # GET /products.json
+
+  # def index
+  #   @products = Product.all
+  # end
+
   def index
-    @products = Product.all
     if params[:q]
       search_term = params[:q]
-          @products = Product.search(search_term)
-        else
-          @products = Product.all
+      if(Rails.env.production?)
+  #Using ilike for case insensitivity on postgres
+        @products = Product.where("name ilike ?", "%#{search_term}%")
+      else
+        @products = Product.where("name LIKE ?", "%#{search_term}%")
+      end
+    else
+      @products = Product.all
     end
   end
+
 
   # GET /products/1
   # GET /products/1.json
@@ -25,6 +35,7 @@ class ProductsController < ApplicationController
 
   # GET /products/1/edit
   def edit
+    # @product = Product.find(params[:id])
   end
 
   # POST /products

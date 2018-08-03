@@ -6,9 +6,9 @@ class SimplePagesController < ApplicationController
       search_term = params[:q]
       if(Rails.env.production?)
         #Using ilike for case insensitivity on postgres
-        @products = Product.where("name ilike ?", "%#{search_term}")
+        @products = Product.where("name ilike ?", "%#{search_term}%")
       else
-        @products = Product.where("name LIKE ?", "%#{search_term}")
+        @products = Product.where("name LIKE ?", "%#{search_term}%")
       end
     else
       @products = Product.all
@@ -29,5 +29,5 @@ class SimplePagesController < ApplicationController
         subject: "A new contact form message from #{@name}",
         body: @message).deliver_now
   end
-  
+
 end
