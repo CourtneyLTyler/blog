@@ -43,6 +43,9 @@ GEM
     arel (8.0.0)
     bcrypt (3.1.11)
     bindex (0.5.0)
+    bootstrap-sass-rails (2.2.2.1)
+      railties (>= 3.1.0)
+      sass-rails (>= 3.1.0)
     builder (3.2.3)
     byebug (10.0.0)
     capybara (2.18.0)
@@ -193,6 +196,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  bootstrap-sass-rails (~> 2.2.2.0)
   byebug
   capybara (~> 2.13)
   coffee-rails (~> 4.2)
@@ -217,4 +221,4 @@ RUBY VERSION
    ruby 2.4.1p111
 
 BUNDLED WITH
-   1.16.1
+   1.16.2
