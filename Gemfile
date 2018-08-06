@@ -67,3 +67,5 @@ end
 gem 'devise'
 
 gem "bootstrap-sass-rails", "~> 2.2.2.0"
+
+gem 'cancancan', '~> 2.0'

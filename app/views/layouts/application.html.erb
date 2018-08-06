@@ -17,8 +17,14 @@
 
 
   <body>
-    <p class=“notice”><%= notice %></p>
-    <p class=“alert”><%= alert %></p>
+
+    <% if notice %>
+      <p id="notice" class="alert alert-primary"><%= notice %></p>
+    <% end %>
+
+    <% if alert %>
+      <p id="alert" class="alert alert-warning"><%= alert %></p>
+    <% end %>
 
 <nav class="navbar navbar-inverse navbar-fixed-top">
       <div class="container-fluid">
@@ -48,7 +54,6 @@
               </ul>
             </li><!-- / dropdown -->
           </ul><!-- / navbar-right -->
-
 
           <ul class="nav pull-right">
             <li>
