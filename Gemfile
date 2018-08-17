@@ -71,3 +71,5 @@ gem "bootstrap-sass-rails", "~> 2.2.2.0"
 gem 'cancancan', '~> 2.0'
 
 gem 'sprockets', '~>3.7.2'
+
+gem 'will_paginate', '~> 3.1.1'
