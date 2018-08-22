@@ -18,15 +18,11 @@ class CommentsController < ApplicationController
   end
 
   def destroy
+    @comment = Comment.find(params[:id])
+    product = @comment.product
+    @comment.destroy
+    redirect_to product
   end
-
-  def index
-    @comments = Comment.all.paginate(page: params[:page], per_page: 5)
-  end
-
-
-
-
 
 
 
