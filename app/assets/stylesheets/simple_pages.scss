@@ -11,7 +11,7 @@ nav {
 
 body {
   padding-top: 40px;
-  padding-bottom: 50px;
+  padding-bottom: 40px;
 }
 
 // start carousel
@@ -83,8 +83,8 @@ h2, h3, {
 
 footer {
   position: fixed;
-  left: 0;
   bottom: 0;
+  left: 0;
   width: 100%;
   background-color: black;
   color: #bbbbbb;
@@ -95,6 +95,10 @@ footer {
 
 .form {
   text-align: left;
+}
+
+#contact_page{
+  word-wrap: normal;
 }
 
 .submit {

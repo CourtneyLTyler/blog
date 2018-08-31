@@ -20,4 +20,9 @@
 
 </div><!-- / product-reviews-->
 
-<%= will_paginate @comments %>
+<div class="apple_pagination">
+  <div class="page_info">
+    <%= page_entries_info @comments %>
+  </div>
+<%= will_paginate @comments, :container => false %>
+  </div>

@@ -4,7 +4,7 @@
 <h1 id="products_header">Our Products</h1>
 
 <div class="container-fluid">
-  <div class="row">
+  <div class="row top_buffer">
     <div class="col-xs-12 col-md-12">
         <%= render @products %>
     </div> <!-- col -->
@@ -12,6 +12,7 @@
 </div> <!-- container -->
 
 <br>
-
+<% if signed_in? && current_user.admin? %>
 <%= link_to 'New Product', new_product_path %>
+<% end %>
 </div>
