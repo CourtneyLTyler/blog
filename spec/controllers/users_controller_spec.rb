@@ -1,35 +1,39 @@
 require 'rails_helper'
 
 describe UsersController, type: :controller do
-  let(:user1) { User.create!(email: "courtneytyler13@yahoo.com", password: "abc-123")}
-  let(:user2) { User.create!(email: "courtneytyler14@yahoo.com", password: "abc-123")}
+  # let(:user1) { User.create!(email: "courtneytyler13@yahoo.com", password: "abc-123")}
+  # let(:user2) { User.create!(email: "courtneytyler14@yahoo.com", password: "abc-123")}
+  before do
+    @user = FactoryBot.create(:user)
+    @user1 = FactoryBot.create(:user)
+  end
 
   describe 'GET #show' do
 
     context 'when a user is logged in' do
       before do
-        sign_in user1
+        sign_in @user
       end
       it 'loads correct user details' do
-        get :show, params: { id: user1.id }
+        get :show, params: { id: @user.id }
         expect(response).to be_ok
-        expect(assigns(:user)).to eq user1
+        expect(assigns(:user)).to eq @user
       end
     end
 
     context 'when a user is not logged in' do
       it 'redirects to login' do
-        get :show, params: { id: user1.id }
+        get :show, params: { id: @user.id }
         expect(response).to redirect_to(new_user_session_path)
       end
     end
 
     context 'when logged in user tries to access other user page' do
       before do
-        sign_in user2
+        sign_in @user1
       end
       it 'redirects to home' do
-        get :show, params: { id: user1.id }
+        get :show, params: { id: @user.id }
         expect(response).to have_http_status(302)
         expect(response).to redirect_to(root_path)
       end
