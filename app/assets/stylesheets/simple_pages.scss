@@ -9,14 +9,21 @@ nav {
   margin-left: 2%;
 }
 
-body {
-  padding-top: 40px;
-  padding-bottom: 40px;
+@media screen and (min-width:50px) and (max-width:767px) {
+    body {
+        margin-top:50px;
+    }
 }
-
-// p{
-//   padding-top: 40px;
-// }
+@media screen and (min-width:768px) and (max-width:991px) {
+    body {
+        margin-top:100px;
+    }
+}
+@media screen and (min-width:992px) and (max-width:2000px) {
+    body {
+        margin-top:50px;
+    }
+}
 
 // start carousel
 

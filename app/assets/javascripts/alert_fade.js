@@ -1,6 +1,6 @@
 $(document).ready(function(){
-  $(".alert").delay(2000).fadeOut(3000);
+  $("#alert").delay(2000).fadeOut(2000);
 });
 $(document).ready(function(){
-  $("#notice").delay(2000).fadeOut(3000);
+  $("#notice").delay(2000).fadeOut(2000);
 });
