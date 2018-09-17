@@ -20,12 +20,12 @@
   <body>
 
     <% if notice %>
-      <p id="notice" class="alert alert-light" role="alert"><%= notice %></p>
+      <p id="notice" class="alert alert-light" role="alert" style="padding-top: 40px;"><%= notice %></p>
     <% end %>
 
-    <% if alert %>
+    <!-- <% if alert %>
       <p id="alert" class="alert alert-light" role="alert"><%= alert %></p>
-    <% end %>
+    <% end %> -->
 
 
 
@@ -41,6 +41,13 @@
         </div><!-- / navbar-header -->
         <div class="collapse navbar-collapse" id="myNavbar">
           <ul class="nav navbar-nav navbar-right">
+            <li>
+              <% if user_signed_in? %>
+                <%= link_to('Logout', destroy_user_session_path, method: :delete) %>
+              <% else %>
+                <%= link_to('Login', new_user_session_path) %>
+              <% end %>
+            </li>
             <li><%= link_to "Home", root_path %></li>
             <li><%= link_to "About", simple_pages_about_path %></li>
             <li><%= link_to "Contact", simple_pages_contact_path %></li>
@@ -56,25 +63,18 @@
                 <li><a href="#">One more separated link</a></li>
               </ul>
             </li><!-- / dropdown -->
-          </ul><!-- / navbar-right -->
-
-          <ul class="nav pull-right">
             <li>
-              <% if user_signed_in? %>
-                <%= link_to('Logout', destroy_user_session_path, method: :delete) %>
-              <% else %>
-                <%= link_to('Login', new_user_session_path) %>
-              <% end %>
+              <form class="navbar-form navbar_right" role="Search">
+                <div class="form-group">
+                  <%= form_with(url: products_path, method: 'get', local: true) do |form| %>
+                  <%= form.text_field :q, id: 'q', value: params[:q] %>
+                  <%= form.submit 'Search' %>
+                  <% end %>
+                </div><!--form-group-->
+              </form>
             </li>
-          </ul>
-          <form class="navbar-form navbar_right" role="Search">
-            <div class="form-group">
-              <%= form_with(url: products_path, method: 'get', local: true) do |form| %>
-                <%= form.text_field :q, id: 'q', value: params[:q] %>
-                <%= form.submit 'Search' %>
-              <% end %>
-            </div><!--form-group-->
-          </form>
+
+          </ul><!-- / navbar-right -->
         </div><!-- / navbar-collapse -->
       </div>
     </nav>

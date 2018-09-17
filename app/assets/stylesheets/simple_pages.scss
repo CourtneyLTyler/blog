@@ -14,6 +14,10 @@ body {
   padding-bottom: 40px;
 }
 
+p{
+  padding-top: 40px;
+}
+
 // start carousel
 
 .carousel-caption {
@@ -105,6 +109,8 @@ footer {
 .submit {
   float: left;
   margin-bottom: 20px;
+  border-radius: 5px;
+  // padding: 5px;
 }
 
 .thanks {
