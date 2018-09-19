@@ -1,36 +1,23 @@
 // // Place all the styles related to the users controller here.
 // // They will automatically be included in application.css.
 // // You can use Sass (SCSS) here: http://sass-lang.com/
-// .reg_header {
-//   margin-top: 60px;
-// }
-//
-// .reg_field {
-//   margin-left: auto;
-//   margin-right: auto;
-// }
-//
-// // login page
-//
-// #new-login {
-//   margin: 0;
-//   padding: 45px 0 500px 0;
-//   box-sizing: border-box;
-//   text-align: left;
-//   background-color: #eee;
-//   border-style: none;
-// }
-//
-// .form-signin {
-//     max-width: 330px;
-//     padding: 15px;
-//     margin: 0 auto;
-//     display: block;
-// }
-//
-//
-// .form
-// .btn-lg {
-//
-// }
-//
+
+
+// new and edit user forms
+
+#user_first_name {
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+
+#user_last_name {
+  margin-bottom: 30px;
+  border-radius: 5px;
+}
+
+#new_user_button {
+  border-radius: 5px;
+  border-width: medium thin thin medium;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}

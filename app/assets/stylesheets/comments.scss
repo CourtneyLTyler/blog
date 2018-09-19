@@ -2,11 +2,15 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+
+
+// start pagination
 .apple_pagination {
   background: #f1f1f1;
   border: 1px solid #e5e5e5;
   text-align: center;
   padding: 1em;
+  margin-bottom: 25px;
   cursor: default; }
   .apple_pagination a, .apple_pagination span {
     padding: 0.2em 0.3em; }
@@ -28,4 +32,34 @@
     text-decoration: none;
     color: black; }
     .apple_pagination a:hover, .apple_pagination a:focus {
-      text-decoration: underline; }
+      text-decoration: underline;
+    }
+
+// start comment form
+#review-header {
+  text-align: left;
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+
+.comment_body {
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+.comment_align {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.rating {
+  margin-bottom: 20px;
+}
+
+.submit_comment {
+  border-radius: 8px;
+  border-width: medium thin thin medium;
+  border-color: black;
+  margin-bottom: 40px;
+  margin-top: 10px;
+}

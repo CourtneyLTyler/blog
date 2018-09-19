@@ -27,17 +27,17 @@
   </div>
 
   <div class="field form-group">
-    <%= form.label :color %></br>
+    <%= form.label :color %>
     <%= form.text_field :color, id: :product_color, class: "form-control" %>
   </div>
 
   <div class="field form-group">
-    <%= form.label :price %></br>
+    <%= form.label :price %>
     <%= form.text_field :price, id: :product_price, class: "form-control" %>
-  </div>
+  </div><br>
 
   <div class="actions form-group">
-    <%= form.submit %>
-  </div>
+    <%= form.submit :id => 'update_button' %>
+  </div><br>
 
 <% end %>
