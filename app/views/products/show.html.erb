@@ -25,27 +25,29 @@
   <%= @product.price %>
 </p>
 
-<p>
-  Average Rating:
-  <div class="rated" data-score="<%= @product.average_rating %>"></div>
-</p>
-
-<p>
-  <strong>Top Review:</strong>
-  <%= @product.highest_rating_comment.try(:rating) %>
-</p>
-
-<p>
-  <strong>Low Review:</strong>
-  <%= @product.lowest_rating_comment.try(:rating) %>
-</p>
-
 <p class="ckout-button">
 <%= form_with(url: '/payments/create') do |form| %>
   <%= hidden_field_tag(:product_id, @product.id) %>
   <%= render partial: "shared/stripe_checkout_button" %>
 <% end %>
 </p>
+<hr>
+<p class="avg_rating">
+  Average Rating:
+  <div class="rated" data-score="<%= @product.average_rating %>"></div>
+</p>
+
+<p>
+  <strong>Top Star Review:</strong>
+  <%= @product.highest_rating_comment.try(:rating) %>
+</p>
+
+<p>
+  <strong>Low Star Review:</strong>
+  <%= @product.lowest_rating_comment.try(:rating) %>
+</p>
+<hr>
+
 
 <%= render 'new_comment' %>
 

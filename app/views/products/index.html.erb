@@ -2,9 +2,7 @@
 
 
 <h1 id="products_header">Our Products</h1>
-<% if signed_in? && current_user.admin? %>
-<%= link_to 'New Product', new_product_path %>
-<% end %>
+
 <div class="container-fluid">
   <div class="row top_buffer">
     <div class="col-xs-12 col-md-12">
@@ -13,6 +11,8 @@
   </div> <!-- row -->
 </div> <!-- container -->
 
-<!-- <br> -->
-
+<br>
+<% if signed_in? && current_user.admin? %>
+<%= link_to 'New Product', new_product_path %>
+<% end %>
 </div>
