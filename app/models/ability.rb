@@ -3,13 +3,20 @@ class Ability
 
   def initialize(user)
     user ||=User.new # guest user (not logged in)
-    can :manage, User, id: user.id
+      can :manage, User, id: user.id
+    if user.present?
+      can :create, Comment
+    if user.admin?
+      can :manage, :all
+    end
+    end
+  end
+end
 
-    can :read, Comment
-    return unless user.present?
-    can :create, Comment
-    return unless user.admin?
-    can :manage, :all
+
+
+
+
 
     # Define abilities for the passed in user here. For example:
     #
@@ -37,5 +44,3 @@ class Ability
     #
     # See the wiki for details:
     # https://github.com/CanCanCommunity/cancancan/wiki/Defining-Abilities
-  end
-end

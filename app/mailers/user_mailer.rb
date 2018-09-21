@@ -15,4 +15,10 @@ class UserMailer < ApplicationMailer
     UserMailer.contact_form(@email, @name, @message).deliver_now
   end
 
+  def order_confirmation(user, product)
+    @product = product
+    @appname = "Unicourt's Furnishings"
+    mail(to: user.email, subject: "Order confirmation from the #{@appname} online store")
+  end
+
 end

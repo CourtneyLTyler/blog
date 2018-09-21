@@ -5,6 +5,8 @@ Rails.application.routes.draw do
     resources :comments
   end
 
+  post 'payments/create'
+
   resources :users
 
   get 'simple_pages/about'

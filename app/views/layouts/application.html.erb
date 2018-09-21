@@ -20,11 +20,11 @@
   <body>
 
     <% if notice %>
-      <p id="notice" class="alert alert-light" role="alert"><%= notice %></p>
+      <p id="notice" class="alert alert-light"><%= notice %></p>
     <% end %>
 
     <% if alert %>
-      <p id="alert" class="alert alert-light" role="alert"><%= alert %></p>
+      <p id="alert" class="alert alert-light"><%= alert %></p>
     <% end %>
 
 
@@ -81,8 +81,9 @@
 
     <%= yield %>
 
-    <footer>
-      &copy; 2018 Unicourt
-    </footer>
+
   </body>
+  <footer>
+    &copy; 2018 Unicourt
+  </footer>
 </html>

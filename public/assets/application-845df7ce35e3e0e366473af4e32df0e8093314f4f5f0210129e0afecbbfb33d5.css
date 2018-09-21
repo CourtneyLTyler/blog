@@ -1,0 +1,388 @@
+.cancel-on-png, .cancel-off-png, .star-on-png, .star-off-png, .star-half-png {
+  font-size: 2em;
+}
+
+@font-face {
+  font-family: "raty";
+  font-style: normal;
+  font-weight: normal;
+  src: url("./fonts/raty.eot");
+  src: url("./fonts/raty.eot?#iefix") format("embedded-opentype");
+  src: url("./fonts/raty.svg#raty") format("svg");
+  src: url("./fonts/raty.ttf") format("truetype");
+  src: url("./fonts/raty.woff") format("woff");
+}
+
+.cancel-on-png, .cancel-off-png, .star-on-png, .star-off-png, .star-half-png {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-family: "raty";
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  line-height: 1;
+  speak: none;
+  text-transform: none;
+}
+
+.cancel-on-png:before {
+  content: "\e600";
+}
+
+.cancel-off-png:before {
+  content: "\e601";
+}
+
+.star-on-png:before {
+  content: "\f005";
+}
+
+.star-off-png:before {
+  content: "\f006";
+}
+
+.star-half-png:before {
+  content: "\f123";
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+
+
+
+
+ */
+
+
+ body,
+ footer,
+ nav {
+   font-family: 'Muli', arial, helvetica, sans-serif;
+   margin-right: 2%;
+   margin-left: 2%;
+ }
+
+ body {
+   padding-bottom: 60px;
+ }
+
+ #search_button {
+   border-radius: 5px;
+ }
+
+ #q {
+   border-radius: 5px;
+ }
+
+ @media screen and (min-width:50px) and (max-width:767px) {
+     body {
+         margin-top:50px;
+     }
+ }
+ @media screen and (min-width:768px) and (max-width:1020px) {
+     body {
+         margin-top:100px;
+     }
+ }
+ @media screen and (min-width:1021px) and (max-width:2000px) {
+     body {
+         margin-top:50px;
+     }
+ }
+/* line 8, /Users/unicourt/Downloads/cf_template-1.1.1/blog/app/assets/stylesheets/comments.scss */
+.apple_pagination {
+  background: #f1f1f1;
+  border: 1px solid #e5e5e5;
+  text-align: center;
+  padding: 1em;
+  margin-bottom: 25px;
+  cursor: default;
+}
+
+/* line 15, /Users/unicourt/Downloads/cf_template-1.1.1/blog/app/assets/stylesheets/comments.scss */
+.apple_pagination a, .apple_pagination span {
+  padding: 0.2em 0.3em;
+}
+
+/* line 17, /Users/unicourt/Downloads/cf_template-1.1.1/blog/app/assets/stylesheets/comments.scss */
+.apple_pagination .disabled {
+  color: #aaaaaa;
+}
+
+/* line 19, /Users/unicourt/Downloads/cf_template-1.1.1/blog/app/assets/stylesheets/comments.scss */
+.apple_pagination .current {
+  font-style: normal;
+  font-weight: bold;
+  background-color: #bebebe;
+  display: inline-block;
+  width: 1.4em;
+  height: 1.4em;
+  line-height: 1.5;
+  -moz-border-radius: 1em;
+  -webkit-border-radius: 1em;
+  border-radius: 1em;
+  text-shadow: rgba(255, 255, 255, 0.8) 1px 1px 1px;
+}
+
+/* line 31, /Users/unicourt/Downloads/cf_template-1.1.1/blog/app/assets/stylesheets/comments.scss */
+.apple_pagination a {
+  text-decoration: none;
+  color: black;
+}
+
+/* line 34, /Users/unicourt/Downloads/cf_template-1.1.1/blog/app/assets/stylesheets/comments.scss */
+.apple_pagination a:hover, .apple_pagination a:focus {
+  text-decoration: underline;
+}
+
+/* line 39, /Users/unicourt/Downloads/cf_template-1.1.1/blog/app/assets/stylesheets/comments.scss */
+#review-header {
+  text-align: left;
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+
+/* line 45, /Users/unicourt/Downloads/cf_template-1.1.1/blog/app/assets/stylesheets/comments.scss */
+.comment_body {
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+/* line 50, /Users/unicourt/Downloads/cf_template-1.1.1/blog/app/assets/stylesheets/comments.scss */
+.comment_align {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+/* line 55, /Users/unicourt/Downloads/cf_template-1.1.1/blog/app/assets/stylesheets/comments.scss */
+.rating {
+  margin-bottom: 20px;
+}
+
+/* line 59, /Users/unicourt/Downloads/cf_template-1.1.1/blog/app/assets/stylesheets/comments.scss */
+.submit_comment {
+  border-radius: 8px;
+  border-width: medium thin thin medium;
+  border-color: black;
+  margin-bottom: 40px;
+  margin-top: 10px;
+}
+/* line 8, /Users/unicourt/Downloads/cf_template-1.1.1/blog/app/assets/stylesheets/products.scss */
+.top_buffer {
+  margin-top: 5%;
+}
+
+/* line 12, /Users/unicourt/Downloads/cf_template-1.1.1/blog/app/assets/stylesheets/products.scss */
+#update_button {
+  border-radius: 5px;
+  border-width: medium thin thin medium;
+}
+
+/* line 17, /Users/unicourt/Downloads/cf_template-1.1.1/blog/app/assets/stylesheets/products.scss */
+.show_buffer {
+  margin-top: 20px;
+}
+
+@media screen and (min-width: 50px) and (max-width: 767px) {
+  /* line 22, /Users/unicourt/Downloads/cf_template-1.1.1/blog/app/assets/stylesheets/products.scss */
+  body {
+    margin-top: 70px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  /* line 27, /Users/unicourt/Downloads/cf_template-1.1.1/blog/app/assets/stylesheets/products.scss */
+  body {
+    margin-top: 100px;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 2000px) {
+  /* line 32, /Users/unicourt/Downloads/cf_template-1.1.1/blog/app/assets/stylesheets/products.scss */
+  body {
+    margin-top: 70px;
+  }
+}
+/* line 37, /Users/unicourt/Downloads/cf_template-1.1.1/blog/app/assets/stylesheets/products.scss */
+body {
+  margin-bottom: 30px;
+}
+/* line 9, /Users/unicourt/Downloads/cf_template-1.1.1/blog/app/assets/stylesheets/scaffolds.scss */
+pre {
+  background-color: #eee;
+  padding: 10px;
+  font-size: 11px;
+}
+
+/* line 28, /Users/unicourt/Downloads/cf_template-1.1.1/blog/app/assets/stylesheets/scaffolds.scss */
+th {
+  padding-bottom: 5px;
+}
+
+/* line 32, /Users/unicourt/Downloads/cf_template-1.1.1/blog/app/assets/stylesheets/scaffolds.scss */
+td {
+  padding: 0 5px 7px;
+}
+
+/* line 42, /Users/unicourt/Downloads/cf_template-1.1.1/blog/app/assets/stylesheets/scaffolds.scss */
+#notice {
+  color: green;
+}
+
+/* line 46, /Users/unicourt/Downloads/cf_template-1.1.1/blog/app/assets/stylesheets/scaffolds.scss */
+.field_with_errors {
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
+
+/* line 52, /Users/unicourt/Downloads/cf_template-1.1.1/blog/app/assets/stylesheets/scaffolds.scss */
+#error_explanation {
+  width: 450px;
+  border: 2px solid red;
+  padding: 7px 7px 0;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+}
+/* line 59, /Users/unicourt/Downloads/cf_template-1.1.1/blog/app/assets/stylesheets/scaffolds.scss */
+#error_explanation ul li {
+  font-size: 12px;
+  list-style: square;
+}
+
+/* line 65, /Users/unicourt/Downloads/cf_template-1.1.1/blog/app/assets/stylesheets/scaffolds.scss */
+label {
+  display: block;
+}
+/* line 8, /Users/unicourt/Downloads/cf_template-1.1.1/blog/app/assets/stylesheets/simple_pages.scss */
+.carousel-caption {
+  font-size: 2em;
+  top: 50%;
+  text-shadow: 0.125em 0.125em 0.25em #000000;
+}
+
+/* line 14, /Users/unicourt/Downloads/cf_template-1.1.1/blog/app/assets/stylesheets/simple_pages.scss */
+.item img {
+  width: 100%;
+  object-fit: contain;
+}
+
+/* line 21, /Users/unicourt/Downloads/cf_template-1.1.1/blog/app/assets/stylesheets/simple_pages.scss */
+#welcome {
+  display: block;
+  padding: 0 30px;
+  margin-top: 40px;
+  border-style: solid;
+}
+
+/* line 28, /Users/unicourt/Downloads/cf_template-1.1.1/blog/app/assets/stylesheets/simple_pages.scss */
+.container {
+  display: block;
+  margin-top: 20%;
+  padding: 0 50px;
+  border-style: solid;
+  text-align: center;
+  margin-bottom: 20%;
+}
+
+/* line 37, /Users/unicourt/Downloads/cf_template-1.1.1/blog/app/assets/stylesheets/simple_pages.scss */
+h1 {
+  color: #ff3399;
+  text-align: center;
+}
+
+/* line 42, /Users/unicourt/Downloads/cf_template-1.1.1/blog/app/assets/stylesheets/simple_pages.scss */
+h2, h3 {
+  text-align: center;
+}
+
+/* line 46, /Users/unicourt/Downloads/cf_template-1.1.1/blog/app/assets/stylesheets/simple_pages.scss */
+.info {
+  text-align: center;
+  font-size: 1.5em;
+  margin-bottom: 20px;
+}
+
+/* line 52, /Users/unicourt/Downloads/cf_template-1.1.1/blog/app/assets/stylesheets/simple_pages.scss */
+.my-image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 58, /Users/unicourt/Downloads/cf_template-1.1.1/blog/app/assets/stylesheets/simple_pages.scss */
+#products_header {
+  border-style: solid;
+  border-color: black;
+  margin-bottom: 40px;
+  padding-top: 35px;
+  padding-bottom: 35px;
+}
+
+/* line 67, /Users/unicourt/Downloads/cf_template-1.1.1/blog/app/assets/stylesheets/simple_pages.scss */
+.navbar {
+  text-transform: uppercase;
+}
+
+/* line 73, /Users/unicourt/Downloads/cf_template-1.1.1/blog/app/assets/stylesheets/simple_pages.scss */
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: black;
+  color: #bbbbbb;
+  padding: 14px;
+}
+
+/* line 85, /Users/unicourt/Downloads/cf_template-1.1.1/blog/app/assets/stylesheets/simple_pages.scss */
+.form {
+  text-align: left;
+}
+
+/* line 89, /Users/unicourt/Downloads/cf_template-1.1.1/blog/app/assets/stylesheets/simple_pages.scss */
+#contact_page {
+  word-wrap: normal;
+}
+
+/* line 93, /Users/unicourt/Downloads/cf_template-1.1.1/blog/app/assets/stylesheets/simple_pages.scss */
+.submit {
+  float: left;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+/* line 100, /Users/unicourt/Downloads/cf_template-1.1.1/blog/app/assets/stylesheets/simple_pages.scss */
+.thanks {
+  margin-top: 40px;
+  text-align: center;
+  font-size: 1.5em;
+  border-style: solid;
+  border-color: black;
+}
+/* line 8, /Users/unicourt/Downloads/cf_template-1.1.1/blog/app/assets/stylesheets/users.scss */
+#user_first_name {
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+
+/* line 13, /Users/unicourt/Downloads/cf_template-1.1.1/blog/app/assets/stylesheets/users.scss */
+#user_last_name {
+  margin-bottom: 30px;
+  border-radius: 5px;
+}
+
+/* line 18, /Users/unicourt/Downloads/cf_template-1.1.1/blog/app/assets/stylesheets/users.scss */
+#new_user_button {
+  border-radius: 5px;
+  border-width: medium thin thin medium;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}

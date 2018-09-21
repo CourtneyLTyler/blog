@@ -15,7 +15,25 @@
 
  */
 
+ body,
+ footer,
+ nav {
+   font-family: 'Muli', arial, helvetica, sans-serif;
+   margin-right: 2%;
+   margin-left: 2%;
+ }
 
+ body {
+   padding-bottom: 60px;
+ }
+
+ #search_button {
+   border-radius: 5px;
+ }
+
+ #q {
+   border-radius: 5px;
+ }
 
  @media screen and (min-width:50px) and (max-width:767px) {
      body {
