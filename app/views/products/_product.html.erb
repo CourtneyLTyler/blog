@@ -1,7 +1,7 @@
 <div class="col-xs-12 col-sm-6 col-md-4">
     <%= image_tag(product.image_url, class: "img-responsive") %>
     <%# logger.debug "Product: #{@product.name}"%>
-    <a href="#"><h1><%= product.name %></h1></a>
+    <h1><%= link_to product.name, product_path(product) %></h1>
     <p class="index_descript"><%= product.description %></p>
     <p><%= product.color %></p>
     <strong><%= product.price %></strong></br>

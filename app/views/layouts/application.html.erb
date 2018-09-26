@@ -19,17 +19,8 @@
 
   <body>
 
-    <% if notice %>
-      <p id="notice" class="alert alert-light"><%= notice %></p>
-    <% end %>
 
-    <% if alert %>
-      <p id="alert" class="alert alert-light"><%= alert %></p>
-    <% end %>
-
-
-
-<nav class="navbar navbar-inverse navbar-fixed-top">
+    <nav class="navbar navbar-inverse navbar-fixed-top">
       <div class="container-fluid">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -79,11 +70,20 @@
       </div>
     </nav>
 
+    <% if notice %>
+      <p id="notice" class="alert alert-success" role="alert"><%= notice %></p>
+    <% end %>
+
+    <% if alert %>
+      <p id="alert" class="alert alert-danger" role="alert"><%= alert %></p>
+    <% end %>
+
     <%= yield %>
 
-
   </body>
+
   <footer>
     &copy; 2018 Unicourt
   </footer>
+
 </html>
