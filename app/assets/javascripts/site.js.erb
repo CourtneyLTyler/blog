@@ -5,7 +5,7 @@ $(document).on('turbolinks:load', function(){
     starOn: '<%= asset_path 'star-on.png' %>',
     scoreName: 'comment[rating]'
   });
-  
+
   $('.rated').raty({
     starHalf: '<%= asset_path 'star-half.png' %>',
     starOff: '<%= asset_path 'star-off.png' %>',
@@ -15,4 +15,7 @@ $(document).on('turbolinks:load', function(){
       return $(this).attr('data-score');
     }
   });
+
+  $(".img-zoom").elevateZoom();
 });
+//the zoom doesnt seem to work
