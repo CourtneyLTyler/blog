@@ -1,28 +1,12 @@
 <div class="product-reviews">
   <% @comments.each do |comment| %>
-    <div class="row comment_align">
-      <hr>
-      <p><%= comment.body %></p>
-    </div><!-- / row -->
-
-    <div class="rated" data-score="<%= comment.rating %>">
-    </div>
-
-    <p>
-      <%= comment.user.first_name %> <small><em><%= "#{time_ago_in_words(comment.created_at)} ago" %></em></small>
-
-      <% if signed_in? && current_user.admin? %>
-        <%= link_to ('<span class="glyphicon glyphicon-remove"></span>').html_safe, product_comment_path(comment.product, comment), method: :delete, data: { confirm: 'Are you sure?' } %>
-      <% end %>
-    </p>
-
-  <% end %> <!-- / each do-->
-
-</div><!-- / product-reviews-->
+    <%= render comment %>
+  <% end %>
+</div>
 
 <div class="apple_pagination">
   <div class="page_info">
     <%= page_entries_info @comments %>
   </div>
-<%= will_paginate @comments, :container => false %>
-  </div>
+  <%= will_paginate @comments, :container => false %>
+</div>

@@ -1,12 +1,12 @@
-$(document).on('turbolinks:load', function(){
+
+var refreshRating = function() {
   $('.rating').raty({
     starHalf: '<%= asset_path 'star-half.png' %>',
     starOff: '<%= asset_path 'star-off.png' %>',
     starOn: '<%= asset_path 'star-on.png' %>',
     scoreName: 'comment[rating]'
   });
-
-  $('.rated').raty({
+    $('.rated').raty({
     starHalf: '<%= asset_path 'star-half.png' %>',
     starOff: '<%= asset_path 'star-off.png' %>',
     starOn: '<%= asset_path 'star-on.png' %>',
@@ -15,7 +15,15 @@ $(document).on('turbolinks:load', function(){
       return $(this).attr('data-score');
     }
   });
+};
 
-  $(".img-zoom").elevateZoom();
+$(document).on('turbolinks:load ajaxSuccess', function() {
+    refreshRating();
+//not refreshing the rating
+    $('.img-zoom').elevateZoom({
+      zoomType: "lens",
+      lensShape: "round",
+      lensSize: 300
+    });
+    //not zooming in
 });
-//the zoom doesnt seem to work
