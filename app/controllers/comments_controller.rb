@@ -1,7 +1,7 @@
 class CommentsController < ApplicationController
 
   def create
-    # byebug
+
     @product = Product.find(params[:product_id])
     @comment = @product.comments.new(comment_params)
     @comment.user = current_user
@@ -21,7 +21,7 @@ class CommentsController < ApplicationController
   end
 
   def destroy
-    # byebug
+
     @comment = Comment.find(params[:id])
     product = @comment.product
     @comment.destroy
