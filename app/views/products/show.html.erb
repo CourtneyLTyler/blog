@@ -1,59 +1,61 @@
 <div class="show_page">
 
+<% cache @product do %>
+  <p class="show_buffer">
+    <strong>Name:</strong>
+    <%= @product.name %>
+  </p>
 
-<p class="show_buffer">
-  <strong>Name:</strong>
-  <%= @product.name %>
-</p>
-
-<p>
-  <strong>Description:</strong>
-  <%= @product.description %>
-</p>
+  <p>
+    <strong>Description:</strong>
+    <%= @product.description %>
+  </p>
+<% end %>
 
   <div class="thumbnail">
     <%= image_tag(@product.image_url, class: "img-responsive img-zoom", data_zoom_image: "@product.product_image.url")%>
   </div>
 
-<p>
-  <strong>Color:</strong>
-  <%= @product.color %>
-</p>
+  <p>
+    <strong>Color:</strong>
+    <%= @product.color %>
+  </p>
 
-<p>
-  <strong>Price:</strong>
-  <%= @product.price %>
-</p>
+  <p>
+    <strong>Price:</strong>
+    <%= @product.price %>
+  </p>
 
-<p class="ckout-button">
-<%= form_with(url: '/payments/create') do |form| %>
-  <%= hidden_field_tag(:product_id, @product.id) %>
-  <%= render partial: "shared/stripe_checkout_button" %>
-<% end %>
-</p>
-<hr>
-<p class="avg_rating">
-  Average Rating:
-  <div id="average-rating" class="rated" data-score="<%= @product.average_rating %>"></div>
-</p>
+  <p class="ckout-button">
+    <%= form_with(url: '/payments/create') do |form| %>
+    <%= hidden_field_tag(:product_id, @product.id) %>
+    <%= render partial: "shared/stripe_checkout_button" %>
+    <% end %>
+  </p>
 
-<p>
-  <strong>Top Star Review:</strong>
-  <%= @product.highest_rating_comment.try(:rating) %>
-</p>
+  <hr>
+  <p class="avg_rating">
+    Average Rating:
+    <div id="average-rating" class="rated" data-score="<%= @product.average_rating %>"></div>
+  </p>
 
-<p>
-  <strong>Low Star Review:</strong>
-  <%= @product.lowest_rating_comment.try(:rating) %>
-</p>
-<hr>
+  <p>
+    <strong>Top Star Review:</strong>
+    <%= @product.highest_rating_comment.try(:rating) %>
+  </p>
+
+  <p>
+    <strong>Low Star Review:</strong>
+    <%= @product.lowest_rating_comment.try(:rating) %>
+  </p>
+  <hr>
 
 
-<%= render 'new_comment' %>
+  <%= render 'new_comment' %>
 
-<%= render 'comments' %>
+  <%= render 'comments' %>
 
-<%= link_to 'Edit', edit_product_path(@product) %>
+  <%= link_to 'Edit', edit_product_path(@product) %>
 
-<%= link_to 'Back', products_path %>
+  <%= link_to 'Back', products_path %>
 </div>
