@@ -1,5 +1,5 @@
 <div class="show_page">
-
+<div data-product-id="<%= @product.id %>">
 <% cache @product do %>
   <p class="show_buffer">
     <strong>Name:</strong>
@@ -59,4 +59,5 @@
   <%= link_to 'Edit', edit_product_path(@product) %>
 
   <%= link_to 'Back', products_path %>
+</div>
 </div>
