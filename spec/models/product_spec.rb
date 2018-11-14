@@ -1,6 +1,7 @@
 require 'rails_helper'
 
 describe Product do
+
   context "when the product has comments" do
 
     before do
@@ -22,4 +23,19 @@ describe Product do
     end
 
   end
+
+  context "product validtion" do
+
+    it "is a valid product" do
+      @product = FactoryBot.build(:random_product, description: nil)
+      expect(@product).to be_valid
+    end
+
+    it "is not valid without a name" do
+      expect(Product.new(description: "text")).not_to be_valid
+    end
+
+    
+  end
+
 end
