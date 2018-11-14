@@ -10,8 +10,6 @@ module ApplicationCable
 
     end
 
-  end
-
 protected
 
   def find_verified_user
@@ -19,5 +17,7 @@ protected
     else
       reject_unauthorized_connection
     end
+  end
+end
 
 end
